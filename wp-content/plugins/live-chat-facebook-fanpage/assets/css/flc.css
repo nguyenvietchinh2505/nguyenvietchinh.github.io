@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'flc';
+  src: url('../font/flc.eot?19448259');
+  src: url('../font/flc.eot?19448259#iefix') format('embedded-opentype'),
+       url('../font/flc.woff2?19448259') format('woff2'),
+       url('../font/flc.woff?19448259') format('woff'),
+       url('../font/flc.ttf?19448259') format('truetype'),
+       url('../font/flc.svg?19448259#flc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'flc';
+    src: url('../font/flc.svg?19448259#flc') format('svg');
+  }
+}
+*/
+ 
+ [class^="flc-"]:before, [class*=" flc-"]:before {
+  font-family: "flc";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.flc-facebook-circled:before { content: '\e800'; } /* '' */
+.flc-facebook:before { content: '\e801'; } /* '' */
+.flc-twitter:before { content: '\e802'; } /* '' */
+.flc-twitter-circled:before { content: '\e803'; } /* '' */
+.flc-skype-outline:before { content: '\e804'; } /* '' */
+.flc-skype:before { content: '\e805'; } /* '' */
+.flc-tumbler-circled:before { content: '\e806'; } /* '' */
+.flc-tumbler:before { content: '\e807'; } /* '' */
+.flc-linkedin:before { content: '\e808'; } /* '' */
+.flc-linkedin-circled:before { content: '\e809'; } /* '' */
+.flc-cancel-circled-outline:before { content: '\e80a'; } /* '' */
+.flc-cancel-circled:before { content: '\e80b'; } /* '' */
+.flc-plus-outline:before { content: '\e80c'; } /* '' */
+.flc-plus:before { content: '\e80d'; } /* '' */
+.flc-minus-outline:before { content: '\e80e'; } /* '' */
+.flc-minus:before { content: '\e80f'; } /* '' */
+.flc-cog-outline:before { content: '\e810'; } /* '' */
+.flc-cog:before { content: '\e811'; } /* '' */
+.flc-wrench-outline:before { content: '\e812'; } /* '' */
+.flc-wrench:before { content: '\e813'; } /* '' */
+.flc-cancel:before { content: '\e814'; } /* '' */

@@ -1,0 +1,109 @@
+#btn-flc {
+	position: fixed;
+	bottom: 50px;
+/* 	right: 40px; */
+	z-index: 9999;
+}
+
+.flc-close button {
+	border: 0px none transparent;
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	background-color: white;
+	
+	position: absolute;
+    top: -10px;
+    z-index: 9999;
+    right: -10px;
+    padding: 0;
+	
+	-webkit-box-shadow: -4px 3px 10px 0 rgba(0,0,0,0.3);
+	box-shadow: -4px 3px 10px 0 rgba(0,0,0,0.3);
+}
+
+.flc-close button:hover {
+	cursor: pointer;
+	color: #757371;
+}
+
+.popup-box {
+	background-color: #ffffff;
+	display: none;
+	position: fixed;
+/* 	right: 20px;     */
+	bottom: 0px;
+	z-index: 9999;
+}
+.round.hollow {
+    margin: 40px 0 0;
+}
+.round.hollow button {
+/* 	background-color: transparent; */
+/*     border: 2px solid #3fbd98; */
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+/*     color: #3fbd98; */
+/*     font-size: 23px; */
+/*     padding: 10px 21px; */
+    text-decoration: none;
+}
+.round.hollow button:hover {
+    border: 2px solid #000;
+    border-radius: 35px;
+    color: red;
+    color: #000;
+/*     font-size: 23px; */
+/*     padding: 10px 21px; */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.round.hollow button span {
+/* 	font-size: 30px; */
+    
+}
+
+/*------------------------------------*\
+	Button Size
+\*------------------------------------*/
+
+.round.hollow button.flc_tiny{
+	font-size: 1em;
+    padding: 5px 12px;
+}
+
+.round.hollow button.flc_tiny span {
+    font-size: 1.2em;
+    vertical-align: baseline;
+}
+
+.round.hollow button.flc_medium{
+	font-size: 1.2em;
+    padding: 8px 14px;
+}
+
+.round.hollow button.flc_medium span {
+    font-size: 1.4em;
+    vertical-align: sub;
+}
+
+.round.hollow button.flc_large{
+	font-size: 1.4em;
+    padding: 0px 14px;
+}
+
+.round.hollow button.flc_large span {
+    font-size: 1.6em;
+    vertical-align: sub;
+}
+
+
+.popup-box-on {
+    display: block !important;
+}
+
+.flc-close button i {
+	font-size: 20px;
+}

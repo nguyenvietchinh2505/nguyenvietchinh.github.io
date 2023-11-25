@@ -1,0 +1,524 @@
+.icon32-posts-wfty {
+    background-position: -359px -5px !important
+}
+
+.wfty-label-cell p {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.wfty-rules-builder .rules_or {
+    margin: 0 0 5px 7px
+}
+
+.wfty-rules-builder .wfty-add-rule-group:hover, .wfty-rules-builder .wfty-add-rule-group:focus {
+    background: #fff;
+    border-color: var(--wffn-primary-alter);
+    color: var(--wffn-primary-alter);
+}
+
+.wfty-rules-builder .wfty-add-rule-group {
+    margin: 12px 0 0;
+    border: 1px solid var(--wffn-primary);
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    -moz-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    vertical-align: top;
+    text-shadow: none;
+    -moz-text-shadow: none;
+    -webkit-text-shadow: none;
+    font-weight: 400;
+    color: var(--wffn-primary);
+    background: #fff;
+}
+
+.wfty-rules-builder h4 {
+    margin: 0
+}
+
+#wfty-rules-groups {
+    margin-top: 25px
+}
+
+.wfty-rule-group-container {
+    width: 100%;
+    padding: 5px;
+    border-color: #dfdfdf;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-width: 1px;
+    border-style: solid
+}
+
+.wfty-rule-group-container .wfty-remove-rule-group {
+    float: right
+}
+
+.wfty-rule-group-header h4 {
+    float: left;
+    padding: 5px
+}
+
+.wfty-rule-group-container {
+    margin-bottom: 20px
+}
+
+.wfty-rules {
+    border-spacing: 0;
+    clear: both;
+    margin: 34px 0 0;
+    border-color: #dfdfdf;
+    background-color: #f9f9f9;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%
+}
+
+.wfty-rules td {
+    padding: 10px 5px;
+}
+
+.wfty-rules td.rule-type {
+    width: 175px
+}
+
+.wfty-rules td.operator select {
+    width: 145px;
+    max-width: 145px
+}
+
+.wfty-rules td.condition {
+    width: 550px
+}
+
+.wfty-rules td.condition select, .wfty-rules td.condition input, .wfty-rules td.condition .chzn-container-multi {
+    width: 100% !important
+}
+
+.wfty-rules td.add {
+    width: 50px
+}
+
+.wfty-rules .wfty-rule td.remove .wfty-button-remove {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid var(--wffn-border-color);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+    background: #fff;
+    transform: translateY(-5px);
+}
+
+.wfty-rules .wfty-rule td.remove .wfty-button-remove:hover, .wfty-rules .wfty-rule td.remove .wfty-button-remove:focus {
+    color: var(--wffn-error);
+    border-color: var(--wffn-error);
+}
+
+.wfty-rules td.remove {
+    width: 30px;
+    border-left: 1px solid #ebe6e6
+}
+
+.wfty-rules td.value .chzn-container-multi {
+    width: 100% !important
+}
+
+#wfty_rules .inside > .wfty-rules-builder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    background: #F9F9F9;
+    border-color: #E1E1E1;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 24%
+}
+
+#wfty_rules .inside > .wfty-rules-builder:after {
+    content: "";
+    display: block;
+    line-height: 0;
+    clear: both
+}
+
+#wfty_rules .inside > .wfty-rules-builder > .label, #wfty_rules .inside > .wfty-rules-builder > #wfty-rules-groups {
+    margin: 0;
+    padding: 15px 12px;
+    float: left;
+    position: relative
+}
+
+.wfty-rules-builder, .wfty-rules-builder .label, .wfty-rules-builder #wfty-rules-groups {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.wfty-rules-builder #wfty-rules-groups {
+    vertical-align: top
+}
+
+#wfty_rules .inside > .wfty-rules-builder > .label {
+    width: 24%
+}
+
+#wfty_rules .inside > .wfty-rules-builder > #wfty-rules-groups {
+    width: 76%
+}
+
+#wfty_rules .inside {
+    margin: 0;
+    padding: 0
+}
+
+#wfty_rules .inside > .wfty-rules-builder {
+    margin: 0;
+    padding: 0
+}
+
+.wfty-rules-builder .label p {
+    color: #777;
+    display: block;
+    font-size: 12px;
+    line-height: 1.4em;
+    font-style: normal;
+    margin: 3px 0 0;
+    padding: 0 !important
+}
+
+.wfty-rules-builder .wfty-remove-rule-group {
+    display: none
+}
+
+.wfty-rules-builder .wfty-rule-group-container {
+    padding: 0;
+    border: none
+}
+
+.wfty-rules-builder .wfty-rules {
+    background: #fff;
+    border-spacing: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    table-layout: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    clear: both;
+    border: none
+}
+
+.wfty-rules-builder .wfty-rules > tbody > tr > td, .wfty-rules-builder .wfty-rules > thead > tr > th {
+    border: 0 none;
+    padding: 4px
+}
+
+#wfty-rules-groups .wfty-rule-group-container {
+    margin: 0 0 5px
+}
+
+#wfty-rules-groups h4 {
+    margin: 15px 0 5px 7px
+}
+
+#wfty-rules-groups .wfty-rule-group-container h4 {
+    margin: 0 0 20px;
+    padding: 0 5px
+}
+
+.wfty-rules .condition ul.chosen-choices {
+    border-color: #ddd;
+    background-image: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07)
+}
+
+.wfty-rules-builder .wfty-rules td.operator select {
+    width: 100%
+}
+
+.wfty-rules-builder .wfty-rules td.operator {
+    width: 20%
+}
+
+.wfty-rules-builder .wfty-rules td.condition {
+    width: auto
+}
+
+.wfty-rules-builder .wfty-rules td.condition .chosen-container {
+    width: 100% !important
+}
+
+.wfty-rules-builder .wfty-rules td.rule-type {
+    width: 35%
+}
+
+.wfty-rules select {
+    width: 100%
+}
+
+a.wfty-remove-rule.wfty-button-remove:before {
+    content: "\f335";
+    font-family: dashicons;
+    z-index: 1;
+    font-size: 15px;
+}
+
+#wfty-rules-groups .wfty-rule-group-container h4 {
+    font-weight: 600;
+    font-size: 1em;
+    float: none;
+    color: #444
+}
+
+.wfty-rules-builder .label > h4 {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 0 0 3px
+}
+
+#wfty_funnel_rule_add_settings[data-is_rules_saved=yes] {
+    display: none;
+}
+
+#wfty_funnel_rule_add_settings[data-is_rules_saved=no] {
+    display: block;
+}
+
+#wfty_funnel_rule_settings[data-is_rules_saved=no] {
+    display: none;
+}
+
+#wfty_funnel_rule_settings input, #wfty_funnel_rule_settings select, #wfty_funnel_rule_settings textarea {
+    border-color: var(--wffn-border-color);
+}
+
+@media screen and (max-width: 782px) {
+    #wfty_rules .inside > .wfty-rules-builder > .label {
+        margin: 0 0 10px
+    }
+
+    #wfty_rules .inside > .wfty-rules-builder > .label, #wfty_rules .inside > .wfty-rules-builder > #wfty-rules-groups {
+        padding: 0;
+        float: none;
+        width: auto
+    }
+
+    #wfty_rules .inside > .wfty-rules-builder {
+        padding: 15px 12px
+    }
+
+    #wfty_rules .inside > .wfty-rules-builder:before {
+        background: transparent;
+        border: none
+    }
+}
+
+#wfty-rules-groups .chosen-container .chosen-results {
+    clear: both;
+}
+
+#wffn_ty_edit_vue_wrap .wffn_content_wrap, .wfty_wrap_inner_rules * {
+    box-sizing: border-box;
+}
+
+.wfty_welcome_wrap {
+    background: #fff;
+    width: 100%;
+}
+
+.wfty_welcome_wrap .wfty_welc_head {
+    font-size: 26px;
+    line-height: 34px;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.wfty_welcome_wrap .wfty_welc_icon, .wfty_welcome_wrap .wfty_welc_title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wfty_welcome_wrap .wfty_welc_text {
+    max-width: 585px;
+    margin: 0 auto 35px;
+}
+
+.wfty_welcome_wrap .wfty_welc_text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8a8a8a;
+    margin: 0 0 15px;
+}
+
+.wfty_welcome_wrap .wfty_btn {
+    min-width: 84px;
+    position: relative;
+    padding: 0 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    font-size: 14px;
+    min-height: 36px;
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--wffn-primary);
+    color: #fff;
+    background: var(--wffn-primary);
+}
+
+.wfty_welcome_wrap .wfty_btn:focus, .wfty_welcome_wrap .wfty_btn:hover {
+    color: #fff !important;
+    background: var(--wffn-primary-alter);
+}
+
+
+.wfty_wrap_r {
+    /* float: right; */
+    width: 100%;
+    background-color: #fff;
+    min-height: 450px;
+    position: relative;
+}
+
+.wfty_table {
+    display: table;
+    width: 100%;
+    min-height: auto;
+}
+
+.wfty_fsetting_table_head {
+    float: left;
+    width: 100%;
+    /* padding: 10px 0; */
+    /* background-color: var(--wffn-tertiary);
+    border-top: 1px solid var(--wffn-border-color);
+    border-bottom: 1px solid var(--wffn-border-color); */
+}
+
+.wfty_fsetting_table_head .wfty_fsetting_table_head_in {
+    position: relative;
+}
+
+.wfty_fsetting_table_head .wfty_fsetting_table_title {
+    float: left;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--wffn-text);
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.wfty_fsetting_table_head .wfty_fsetting_table_title {
+    top: 2px;
+    position: relative;
+}
+
+.wfty_wrap_inner_rules hr {
+    display: none;
+}
+
+.wfty_fsetting_table_head .wfty_form_submit {
+    float: right;
+}
+
+.wfty_wrap_inner_rules .wfty_rules_form .wfty-rules-builder {
+    float: left;
+    width: 100%;
+    padding: 0 0 30px;
+}
+
+#wfty-rules-groups .wfty-rule-group-container {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.wfty_fsetting_table_head .wfty_save_funnel_rules_ajax_loader {
+    float: left;
+}
+
+#wfty-rules-groups .wfty-rule-group-container table.wfty-rules {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--wffn-border-color);
+}
+
+#wfty-rules-groups .wfty-rule-group-container table {
+    padding: 20px 10px;
+    border-radius: 6px;
+}
+
+#wfty-rules-groups .wfty-rule-group-container .condition table {
+    border: none;
+    padding: 0 10px;
+}
+
+.wffn_ty_edit_rules.wffn_content_wrap {
+    padding: 0
+}
+
+
+#wfty-rules-groups .wfty-rule-group-container .condition tbody > tr td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.wfty-rules-builder .wfty-rules td.rule-type {
+    vertical-align: bottom
+}
+
+.wfty-rules-builder .wfty-rules td.operator {
+    vertical-align: bottom
+}
+
+.wfty-rules-builder .wfty-rules td.condition {
+    vertical-align: top
+}
+
+.wfty-rules-builder .wfty-rules td.loading {
+    vertical-align: bottom
+}
+
+.wfty-rules-builder .wfty-rules td.add {
+    vertical-align: bottom
+}
+
+.wfty-rules-builder .wfty-rules td.remove {
+    vertical-align: bottom
+}
+
+.wfty-rules-builder .wfty-add-rule.button {
+    background-color: #fff;
+}
+
+#wfty-rules-groups .wfty-rule-group-container h4.rules_or {
+    text-transform: uppercase;
+    margin: 15px 0 20px 10px;
+    font-size: 14px;
+    color: var(--wffn-text);
+    padding: 0
+}

@@ -1,0 +1,30 @@
+<script type="text/html" id="tmpl-wfop-field">
+	<div data-key="<# print(data.field.InputName); #>" data-index="<# print(data.index); #>" class="wffn_sortable_field" style="">
+		<div class="wffn_billing_accordion_inner bwf_open_accordion">
+			<div class="accordion_left">
+				<div class="accordion_heading"><# print(data.field.label); #></div>
+			</div>
+			<div class="accordion_right"><i class="dashicons dashicons-menu-alt3 wffn_drag_address_icon ui-sortable-handle"></i>
+				<i class="dashicons dashicons-arrow-down"></i>
+			</div>
+			<div class="wffn_clear"></div>
+		</div>
+		<div class="wffn_billing_accordion_content">
+			<?php
+			foreach ( WFOPP_Core()->form_fields->get_supported_form_fields_controller() as $key => $val ) {
+				$val->get_field_editor_html( 'edit' );
+			} ?>
+
+			<div class="wffn_row_billing">
+				<div class="wffn_billing_left">
+
+				</div>
+				<div class="wffn_billing_right">
+					<a href="javascript:void(0)" data-index="<# print(data.index); #>" class="wffn_delete_optin_field" id="wfob_delete_field"><?php esc_html_e( 'Delete', 'funnel-builder' ); ?></a>
+
+				</div>
+			</div>
+			<div class="wffn_clear"></div>
+		</div>
+	</div>
+</script>

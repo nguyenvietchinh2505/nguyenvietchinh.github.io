@@ -1,0 +1,426 @@
+<div>
+	<div class="wffn_clear"></div>
+	<div class="wfop-show-hide-cust-settings">
+		<?php do_action( 'wfopp_before_optin_customizer_settings' ); ?>
+		<div style="display:none;" class="wffn_sortable_field wfop-cust-settings" data-cust-inline="yes" data-cust-popover="yes">
+			<div class="wffn_billing_accordion_inner bwf_open_accordion">
+				<div class="accordion_left">
+					<div class="accordion_heading"><?php esc_html_e( 'Fields', 'funnel-builder' ); ?></div>
+				</div>
+				<div class="accordion_right"><i class="dashicons dashicons-arrow-down"></i>
+				</div>
+				<div class="wffn_clear"></div>
+			</div>
+			<div class="wffn_billing_accordion_content">
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_border_type"><?php esc_html_e( 'Border', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right optin_flex_3_field">
+						<div>
+							<select onchange="window.wfop_design.onChangeStylingOptions('input_border_type', this.value)" id="input_border_type" placeholder="type">
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'solid', true ); ?> value="solid">
+									<?php esc_html_e( 'solid', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'dashed', true ); ?> value="dashed">
+									<?php esc_html_e( 'dashed', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'dotted', true ); ?> value="dotted">
+									<?php esc_html_e( 'dotted', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'double', true ); ?> value="double">
+									<?php esc_html_e( 'double', 'funnel-builder' ); ?>
+								</option>
+							</select>
+							<input id="input_border_size" onChange="window.wfop_design.onChangeStylingOptions('input_border_size', this.value)" type="number" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_size', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wffn_label">
+						</div>
+						<div>
+							<input id="input_border_color" name="input_border_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_border_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wffn_label wfop_color_picker" placeholder="#ececec">
+						</div>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_size"><?php esc_html_e( 'Field Size', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select onchange="window.wfop_design.onChangeStylingOptions('field_size', this.value)" id="field_size" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'field_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'small', true ); ?> value="small">
+								<?php esc_html_e( 'Small', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'field_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'med', true ); ?> value="med">
+								<?php esc_html_e( 'Medium', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'field_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'large', true ); ?> value="large">
+								<?php esc_html_e( 'Large', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'field_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'e_large', true ); ?> value="e_large">
+								<?php esc_html_e( 'Extra Large', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_font_size"><?php esc_html_e( 'Font Size', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="input_font_size" onChange="window.wfop_design.onChangeStylingOptions('input_font_size', this.value)" type="number" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_font_size', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" placeholder="14" class="form-control wffn_placeholder">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_font_family"><?php esc_html_e( 'Font Family', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select id="input_font_family" onchange="window.wfop_design.onChangeStylingOptions('input_font_family', this.value)" placeholder="type" class="wffn_font_family">
+							<?php foreach ( bwf_get_fonts_list() as $font ) {
+								?>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_font_family', WFOPP_Core()->optin_pages->get_edit_id() ), $font['id'], true ); ?> value="<?php echo $font['id']; ?>"><?php echo $font['name']; ?></option>
+								<?php
+							} ?>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_font_weight"><?php esc_html_e( 'Font Weight', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select id="input_font_weight" onchange="window.wfop_design.onChangeStylingOptions('input_font_weight', this.value)" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_font_weight', WFOPP_Core()->optin_pages->get_edit_id() ), '400', true ); ?> value="400">
+								<?php esc_html_e( 'Normal 400', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_font_weight', WFOPP_Core()->optin_pages->get_edit_id() ), '700', true ); ?> value="700">
+								<?php esc_html_e( 'Bold 700', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="show_input_label"><?php esc_html_e( 'Show Labels', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<label for="show_input_label_1" style="margin-right:10px"><input onchange="window.wfop_design.onChangeStylingOptions('show_input_label', this.value)" <?php checked( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'show_input_label', WFOPP_Core()->optin_pages->get_edit_id() ), 'yes', true ); ?> id="show_input_label_1" type="radio" name="show_input_label" value="yes" class="form-control wffn_placeholder"><?php esc_html_e( 'Yes', 'funnel-builder' ); ?>
+						</label>
+						<label for="show_input_label_2"><input onchange="window.wfop_design.onChangeStylingOptions('show_input_label', this.value)" <?php checked( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'show_input_label', WFOPP_Core()->optin_pages->get_edit_id() ), 'no', true ); ?> id="show_input_label_2" type="radio" name="show_input_label" value="no" class="form-control wffn_placeholder"><?php esc_html_e( 'No', 'funnel-builder' ); ?>
+						</label>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="label_font_size"><?php esc_html_e( 'Label Font Size', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="label_font_size" onChange="window.wfop_design.onChangeStylingOptions('label_font_size', this.value)" type="number" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'label_font_size', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" placeholder="14" class="form-control wffn_placeholder">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_label_color"><?php esc_html_e( 'Label', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="input_label_color" name="input_label_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_label_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#000000">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_text_color"><?php esc_html_e( 'Text/ Placeholder', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="input_text_color" name="input_text_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_text_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#444444">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="input_bg_color"><?php esc_html_e( 'Background', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="input_bg_color" name="input_bg_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'input_bg_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#ffffff">
+					</div>
+				</div>
+				<?php
+				$instance        = WFFN_Optin_Pages::get_instance();
+				$page_data       = $instance->get_page_layout( $instance->edit_id );
+				$selected_fields = $page_data['fieldsets'];
+				$z               = 0;
+				foreach ( $selected_fields as $step => $step_data ) {
+					if ( ! is_array( $step_data ) ) {
+						continue;
+					}
+					foreach ( $step_data as $index => $section ) {
+						if ( empty( $section['fields'] ) ) {
+							continue;
+						}
+						$fields = $section['fields'];
+						foreach ( $fields as $f_index => $field ) {
+							if ( ! isset( $field['id'] ) || ! isset( $field['field_type'] ) || 'hidden' == $field['type'] || 'wfop_wysiwyg' == $field['type'] ) {
+								continue;
+							}
+							$id    = $field['id'];
+							$width = isset( $field['width'] ) ? $field['width'] : 'wffn-sm-50';
+
+							$border_t = ( 0 === $z ) ? 'wfop_setting_top_border' : '';
+							$z ++;
+							?>
+							<div class="wffn_row_billing <?php echo $border_t ?>">
+								<div class="wffn_billing_left"><label for="bwfac_form_field_<?php esc_attr_e( $id ); ?>"><?php esc_attr_e( $field['label'] ); ?></label></div>
+								<div class="wffn_billing_right">
+									<select name="bwfac_form_field[<?php esc_attr_e( $id ); ?>]" id="wfo_<?php esc_attr_e( $id ); ?>" class="form-control" onchange="window.wfop_design.onChangeWidth('<?php esc_attr_e( $id ); ?>', this.value)">
+										<option value="wffn-sm-100"<?php $width == "wffn-sm-100" ? esc_attr_e( 'selected' ) : '' ?>><?php esc_html_e( 'Full' ) ?></option>
+										<option value="wffn-sm-33" <?php $width == "wffn-sm-33" ? esc_attr_e( 'selected' ) : '' ?>><?php esc_html_e( 'One Third' ) ?></option>
+										<option value="wffn-sm-50" <?php $width == "wffn-sm-50" ? esc_attr_e( 'selected' ) : '' ?>><?php esc_html_e( 'One Half' ) ?></option>
+										<option value="wffn-sm-67" <?php $width == "wffn-sm-67" ? esc_attr_e( 'selected' ) : '' ?>><?php esc_html_e( 'Two Third' ) ?></option>
+									</select>
+								</div>
+							</div>
+							<?php
+						}
+					}
+				}
+				?>
+			</div>
+		</div>
+		<div data-cust-inline="yes" data-cust-popover="yes" class="wffn_sortable_field wfop-cust-settings" style="display:none;">
+			<div class="wffn_billing_accordion_inner bwf_open_accordion">
+				<div class="accordion_left">
+					<div class="accordion_heading"><?php esc_html_e( 'Button', 'funnel-builder' ); ?></div>
+				</div>
+				<div class="accordion_right"><i class="dashicons dashicons-arrow-down"></i>
+				</div>
+				<div class="wffn_clear"></div>
+			</div>
+			<div class="wffn_billing_accordion_content">
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_text"><?php esc_html_e( 'Text', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_text" onKeyup="window.wfop_design.onChangeStylingOptions('button_text', this.value)" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_text', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wffn_placeholder">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_submitting_text"><?php esc_html_e( 'Submission Text', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_submitting_text" onKeyup="window.wfop_design.onChangeStylingOptions('button_submitting_text', this.value)" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_submitting_text', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wffn_placeholder">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_size"><?php esc_html_e( 'Size', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select onchange="window.wfop_design.onChangeStylingOptions('button_size', this.value)" id="button_size" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'small', true ); ?> value="small">
+								<?php esc_html_e( 'Small', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'med', true ); ?> value="med">
+								<?php esc_html_e( 'Medium', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'large', true ); ?> value="large">
+								<?php esc_html_e( 'Large', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'e_large', true ); ?> value="e_large">
+								<?php esc_html_e( 'Extra Large', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_size', WFOPP_Core()->optin_pages->get_edit_id() ), 'custom', true ); ?> value="custom">
+								<?php esc_html_e( 'Custom Padding', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing wfop_custom_pad">
+					<div class="wffn_billing_left">
+					</div>
+					<div class="wffn_billing_right optin_flex_eql_field wffn_op_custom">
+						<div>
+							<div><label>Top </label>
+								<input id="button_padding_top" onChange="window.wfop_design.onChangeStylingOptions('button_padding_top', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_padding_top', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Right </label>
+								<input id="button_padding_right" onChange="window.wfop_design.onChangeStylingOptions('button_padding_right', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_padding_right', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Bottom </label>
+								<input id="button_padding_bottom" onChange="window.wfop_design.onChangeStylingOptions('button_padding_bottom', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_padding_bottom', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Left </label>
+								<input id="button_padding_left" onChange="window.wfop_design.onChangeStylingOptions('button_padding_left', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_padding_left', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_width"><?php esc_html_e( 'Width', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select onchange="window.wfop_design.onChangeStylingOptions('button_width', this.value)" id="button_width" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_width', WFOPP_Core()->optin_pages->get_edit_id() ), 'normal', true ); ?> value="normal">
+								<?php esc_html_e( 'Normal', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_width', WFOPP_Core()->optin_pages->get_edit_id() ), 'full', true ); ?> value="full">
+								<?php esc_html_e( 'Full', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_width"><?php esc_html_e( 'Align', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select onchange="window.wfop_design.onChangeStylingOptions('button_align', this.value)" id="button_align" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_align', WFOPP_Core()->optin_pages->get_edit_id() ), 'left', true ); ?> value="left">
+								<?php esc_html_e( 'Left', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_align', WFOPP_Core()->optin_pages->get_edit_id() ), 'center', true ); ?> value="center">
+								<?php esc_html_e( 'Center', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_align', WFOPP_Core()->optin_pages->get_edit_id() ), 'right', true ); ?> value="right">
+								<?php esc_html_e( 'Right', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_margin_top"><?php esc_html_e( 'Margin', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right optin_flex_eql_field wffn_op_custom">
+						<div>
+							<div><label>Top </label>
+							<input id="button_margin_top" onChange="window.wfop_design.onChangeStylingOptions('button_margin_top', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_margin_top', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Right </label>
+								<input id="button_margin_right" onChange="window.wfop_design.onChangeStylingOptions('button_margin_right', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_margin_right', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Bottom </label>
+								<input id="button_margin_bottom" onChange="window.wfop_design.onChangeStylingOptions('button_margin_bottom', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_margin_bottom', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+							<div><label>Left </label>
+								<input id="button_margin_left" onChange="window.wfop_design.onChangeStylingOptions('button_margin_left', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_margin_left', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_border_type"><?php esc_html_e( 'Border', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right optin_flex_3_field">
+						<div>
+							<select onchange="window.wfop_design.onChangeStylingOptions('button_border_type', this.value)" id="button_border_type" placeholder="type">
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'solid', true ); ?> value="solid">
+									<?php esc_html_e( 'solid', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'dashed', true ); ?> value="dashed">
+									<?php esc_html_e( 'dashed', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'dotted', true ); ?> value="dotted">
+									<?php esc_html_e( 'dotted', 'funnel-builder' ); ?>
+								</option>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_type', WFOPP_Core()->optin_pages->get_edit_id() ), 'double', true ); ?> value="double">
+									<?php esc_html_e( 'double', 'funnel-builder' ); ?>
+								</option>
+							</select>
+							<input id="button_border_size" onChange="window.wfop_design.onChangeStylingOptions('button_border_size', this.value)" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_size', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" type="number" class="form-control wffn_label">
+						</div>
+						<div>
+							<input id="button_border_color" name="button_border_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wffn_label wfop_color_picker" placeholder="#E69500">
+						</div>
+					</div>
+				</div>
+
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_font_size"><?php esc_html_e( 'Font Size', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_font_size" onChange="window.wfop_design.onChangeStylingOptions('button_font_size', this.value)" type="number" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_font_size', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" placeholder="14" class="form-control wffn_placeholder">
+					</div>
+				</div>
+
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_font_family"><?php esc_html_e( 'Font Family', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<select id="button_font_family" onchange="window.wfop_design.onChangeStylingOptions('button_font_family', this.value)" placeholder="type" class="wffn_font_family">
+							<?php foreach ( bwf_get_fonts_list() as $font ) {
+								?>
+								<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_font_family', WFOPP_Core()->optin_pages->get_edit_id() ), $font['id'], true ); ?> value="<?php echo $font['id']; ?>"><?php echo $font['name']; ?></option>
+								<?php
+							} ?>
+						</select>
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_font_weight"><?php esc_html_e( '', 'funnel-builder' ); ?>Font Weight</label>
+					</div>
+					<div class="wffn_billing_right">
+						<select id="button_font_weight" onchange="window.wfop_design.onChangeStylingOptions('button_font_weight', this.value)" placeholder="type">
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_font_weight', WFOPP_Core()->optin_pages->get_edit_id() ), '400', true ); ?> value="400">
+								<?php esc_html_e( 'Normal 400', 'funnel-builder' ); ?>
+							</option>
+							<option <?php selected( WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_font_weight', WFOPP_Core()->optin_pages->get_edit_id() ), '700', true ); ?> value="700">
+								<?php esc_html_e( 'Bold 700', 'funnel-builder' ); ?>
+							</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_text_color"><?php esc_html_e( 'Text', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_text_color" name="button_text_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_text_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#ffffff">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_text_color_hover"><?php esc_html_e( 'Text Hover', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_text_color_hover" name="button_text_color_hover" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_text_color_hover', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#ffffff">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_bg_color"><?php esc_html_e( 'Background', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_bg_color" name="button_bg_color" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_bg_color', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#E69500">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_bg_color_hover"><?php esc_html_e( 'Background Hover', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_bg_color_hover" name="button_bg_color_hover" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_bg_color_hover', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#E69500">
+					</div>
+				</div>
+				<div class="wffn_row_billing">
+					<div class="wffn_billing_left">
+						<label for="button_border_color_hover"><?php esc_html_e( 'Border Hover', 'funnel-builder' ); ?></label>
+					</div>
+					<div class="wffn_billing_right">
+						<input id="button_border_color_hover" name="button_border_color_hover" type="text" value="<?php echo WFOPP_Core()->optin_pages->form_builder->get_form_customization_option( 'button_border_color_hover', WFOPP_Core()->optin_pages->get_edit_id() ); ?>" class="form-control wfop_color_picker" placeholder="#FBA506">
+					</div>
+				</div>
+
+
+				<!--Footer text-->
+				<?php do_action('wfopp_customizeable_fields'); ?>
+				<!--End Footer text-->
+
+				<div class="wffn_clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
